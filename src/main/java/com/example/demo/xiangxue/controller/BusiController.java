@@ -30,6 +30,6 @@ public class BusiController {
     @RequestMapping("/user")
     @ResponseBody
     public String getAll(){
-        return "你好";
+        return "你好a";
     }
 }
