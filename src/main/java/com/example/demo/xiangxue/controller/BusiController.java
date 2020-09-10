@@ -41,6 +41,8 @@ public class BusiController {
     public String getAll(){
         logger.info("进入user方法");
         String s = jedisCache.setString("shanggq测试","shangg");
-        return s;
+        logger.info("进入user方法1s==="+s);
+        String s1 = jedisCache.getString("shanggq测试");
+        return s1;
     }
 }
